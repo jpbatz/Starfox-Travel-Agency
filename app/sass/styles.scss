@@ -1,4 +1,7 @@
-$gunmetal_gray: orange_xx;
+@import "partials/settings";
+@import "../bower_components/foundation/scss/foundation";
+
+$gunmetal_gray: orange;
 // $gunmetal_gray: #232329;
 
 body {
