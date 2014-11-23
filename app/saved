@@ -1,0 +1,85 @@
+    <header id="pageHeader">
+      <!-- <img src="/assets/logo.png" alt="Logo Image"> -->
+      <div id="logoImg"></div> 
+      <h1 id="pageTitle"><span class="bold">StarFox</span>Intergalactic Travel Agency</h1>
+      <nav id="nav_bar">
+        <ul>
+          <li><a href="Home"></a></li>
+          <li><a href="About"></a></li>
+          <li><a href="Services"></a></li>
+          <li><a href="Interstellar Travel"></a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div id="intro" class="row">
+      <div class="column">
+      We will take you to the <span>Moon and Back!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error temporibus adipisci quibusdam nam, quod vitae voluptatum, voluptas sequi laboriosam dolores cum voluptates a aperiam? Possimus nostrum voluptatem sint fugit tenetur!
+      </div>
+      <div class="column">
+        <div>
+          <img src="/assets/logo.png" alt="Logo Image">
+        </div>
+        <div id="find_out_more">
+          <p>Find Out More</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column">
+        <div class="row">
+          <div class="column">
+            More Deals
+          </div>
+          <div class="column">
+            Image
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <p>UFO graphics designed by Kari Gaynor and Dmitry Lagunov from the Noun Project</p>
+  </footer>
+
+
+
+  body {
+  background-color: white;
+  text-align: center;
+}
+
+
+header#pageHeader {
+
+    background-color: $main_teal;
+    background-image: url(/assets/header_bg.png);
+    background-align: center;
+
+  & #logoImg {
+    width: 160px;
+    height: 70px;
+    margin: 0px auto;
+    background-image: url('/assets/logo.png');
+  }
+
+  & #nav_bar {
+    background-color: $faded_black;
+    color: white;
+  }
+
+}
+
+#intro {
+  background-color: $main_teal;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: $faded_black;
+  color: white;
+}

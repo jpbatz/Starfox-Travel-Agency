@@ -5556,6 +5556,49 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-body {
-  background-color: orange;
-  color: green; }
+header {
+  text-align: center; }
+  header #header_block {
+    background-image: url('/images/header_bg.png');
+    background-color: #88C2C0;
+    padding-bottom: 20px;
+    padding-top: 130px; }
+    header #header_block #logo {
+      padding-bottom: 5px; }
+      header #header_block #logo a {
+        background-image: url('/images/logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 120px;
+        color: white;
+        font-size: 18px; }
+
+#content_block {
+  border: 5px solid red;
+  margin: 40px; }
+  #content_block #content_left {
+    background-color: #88C2C0;
+    border-radius: 5px 0px 0px 5px; }
+  #content_block #content_right {
+    background-color: pink;
+    order-radius: 0px 5px 5px 0px;
+    background-image: url('/images/ship.png');
+    background-repeat: no-repeat; }
+
+#quicklinks_block #left_block {
+  border: 1px solid green;
+  margin: 10px;
+  border-radius: 5px; }
+#quicklinks_block #middle_block {
+  border: 1px solid green;
+  margin: 10px;
+  border-radius: 5px; }
+#quicklinks_block #right_block {
+  border: 1px solid green;
+  margin: 10px;
+  border-radius: 5px; }
+
+#footer_block {
+  background-color: #212121;
+  color: white;
+  text-align: center; }
