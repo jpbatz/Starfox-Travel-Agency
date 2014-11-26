@@ -1,6 +1,13 @@
 @import "partials/settings";
 @import "../bower_components/foundation/scss/foundation";
 
+// colors:
+// $main_blue: #92BEBF;
+// $faded_gray: #535353;
+// $faded_black: #262626;
+// $faded_white: #D3D3D3;
+// $black: #262626;
+// $white: #FFFFFF;
 
 
 header {
@@ -14,6 +21,7 @@ header {
     background-color: $main_blue;
     padding-bottom: 20px;
     padding-top: 130px;
+    height: 67px
 
     #logo {
       // background-color: orange;
