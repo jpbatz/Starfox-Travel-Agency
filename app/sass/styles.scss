@@ -40,51 +40,82 @@ header {
       }
     }
   }
-}
 
-#content_block {
-  border: 5px solid red;
-  
-  margin: 40px;
-
-  #content_left {
-    background-color: $main_blue;
-    border-radius: 5px 0px 0px 5px;
-  }
-
-  #content_right {
-    background-color: pink;
-    order-radius: 0px 5px 5px 0px;
-    background-image: url('/images/ship.png');
-    background-repeat: no-repeat;
+  .top-bar-section {
+    .left {
+      // text-align: center;
+    }
   }
 
 }
 
-#quicklinks_block {
+section {
 
-  background-color: yellow;
-  
-  #left_block {
-    border: 1px solid green;
-    margin: 10px;
-    border-radius: 5px;
+  #content_block {
+    border: 5px solid red;
+    margin: 40px;
+
+    #content_left {
+      background-color: $main_blue;
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    #content_right {
+      background-color: pink;
+      border-radius: 0px 5px 5px 0px;
+      background-image: url('/images/ship.png');
+      background-repeat: no-repeat;
+    }
+
   }
 
-  #middle_block {
-    border: 1px solid green;
-    margin: 10px;
-    border-radius: 5px;
-  }
+  #quicklinks_block {
 
-  #right_block {
-    border: 1px solid green;
-    margin: 10px;
-    border-radius: 5px;
+    .small-block-grid-3 {
+      // background-color: yellow;
+    }
+
+    #left_block {
+      border: 1px solid green;
+      background-color: $faded_gray;
+      // margin: 5x;
+      border-radius: 5px;
+        div{
+          h3,h4,h5 {
+            color: $white;
+          }
+        }
+    }
+
+    #middle_block {
+      border: 1px solid green;
+      background-color: $faded_gray;
+      color: $white;
+      // margin: 5px;
+      border-radius: 5px;
+        div{
+          h3,h4,h5 {
+            color: $white;
+          }
+        }
+    }
+
+    #right_block {
+      border: 1px solid green;
+      background-color: $faded_gray;
+      color: $white;
+      // margin: 5px;
+      border-radius: 5px;
+        div{
+          h3,h4,h5 {
+            color: $white;
+          }
+        }
+    }
+
   }
 
 }
-
 
 #footer_block {
   background-color: $faded_black;
