@@ -1,13 +1,23 @@
 @import "partials/settings";
 @import "../bower_components/foundation/scss/foundation";
 
-// colors:
-// $main_blue: #92BEBF;
-// $faded_gray: #535353;
-// $faded_black: #262626;
-// $faded_white: #D3D3D3;
-// $black: #262626;
-// $white: #FFFFFF;
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
+// font-family: 'Open Sans', sans-serif;
+// light, normal, semi-bold, bold, extra-bold
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700");
+// font-family: 'Open Sans Condensed', sans-serif;
+// light, normal or bold
+
+// defined colors:
+// $medium_teal    : #92BEBF;
+// $faded_gray     : #444444;
+// $faded_black    : #535353;
+// $faded_white    : #FBFBFB;
+// $alt_black      : #262626;
+// $charcoal       : #555555;
+// $black          : #FFFFFF;
+// $white          : #FFFFFF;
 
 
 header {
@@ -15,87 +25,84 @@ header {
   // border: 10px solid red;
   text-align: center;
 
-  #header_block {
-    // border: 10px solid blue;
+  & #header_block {
+    // border: 10px solid yellow;
     background-image: url('/images/header_bg.png');
-    background-color: $main_blue;
-    padding-bottom: 20px;
-    padding-top: 130px;
-    height: 67px
+    background-color: $medium_teal;
+    padding-bottom: 5px;
+    padding-top: 100px;
 
-    #logo {
+    & #logo {
+
       // background-color: orange;
-      padding-bottom: 5px;
 
-      a {
+      & a {
         // background-color: yellow;
         background-image: url('/images/logo.png');
         background-repeat: no-repeat;
-        // height: 30px;
-        // width: 30px;
         background-position: center;
         padding-top: 120px;
-        // margin-bottom: 50px;
-        // padding-bottom: 100px;
         color: white;
         font-size: 18px;
 
-        // #logo_starfox {
-        // }
+//         // #logo_starfox {
+//         // }
 
-        // #logo_intergalactic {
-        // }
+//         // #logo_intergalactic {
+//         // }
+      }  // end a
+
+    }  // end #logo
+
+  }  // end #header_block
+
+} // and of header
+
+#nav_bar {
+  color: white;
+  border: 3px solid white;
+
+  & #nav_menu {
+
+    border: 1px solid white;
+
+    & #home {
+      & h3 {
+        text-align: right;
+        color: white;
       }
     }
+    & #about {
+      & h3 {
+        text-align: right;
+        color: white;
+      }
+    }
+    & #services {
+      & h3 {
+        text-align: right;
+        color: white;
+      }
+    }
+    & #interstellar_travel {
+      & h3 {
+        text-align: right;
+        color: white;
+      }
+    }
+
   }
 }
-
-#content_block {
-  border: 5px solid red;
-  
-  margin: 40px;
-
-  #content_left {
-    background-color: $main_blue;
-    border-radius: 5px 0px 0px 5px;
-  }
-
-  #content_right {
-    background-color: pink;
-    order-radius: 0px 5px 5px 0px;
-    background-image: url('/images/ship.png');
-    background-repeat: no-repeat;
-  }
-
-}
-
-#quicklinks_block {
-
-  background-color: yellow;
-  
-  #left_block {
-    border: 1px solid green;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-  #middle_block {
-    border: 1px solid green;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-  #right_block {
-    border: 1px solid green;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-}
-
 
 #footer_block {
   background-color: $faded_black;
-  color: white;
+    & p {
+  color: $faded_white;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.5;
+  padding: 15px 0px;
+    }
 }
