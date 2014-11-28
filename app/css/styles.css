@@ -5573,36 +5573,68 @@ header {
         color: white;
         font-size: 18px; }
 
+#nav_bar {
+  border: 5px solid red; }
+  #nav_bar .row {
+    background-color: #212121;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center; }
+    #nav_bar .row div {
+      border: 1px solid white;
+      padding: 0px 0px 0px 0px; }
+
 section #content_block {
   border: 5px solid red;
-  margin: 40px; }
+  margin-top: 40px;
+  margin-bottom: 40px; }
   section #content_block #content_left {
     background-color: #88C2C0;
-    border-radius: 5px 0px 0px 5px; }
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 15px; }
+    section #content_block #content_left p {
+      font-size: 26px;
+      padding: 30px; }
   section #content_block #content_right {
-    background-color: pink;
-    border-radius: 0px 5px 5px 0px;
-    background-image: url('/images/ship.png');
-    background-repeat: no-repeat; }
+    background-color: #88C2C0;
+    border-radius: 0px 5px 5px 0px; }
+    section #content_block #content_right #space_ship {
+      background-image: url('/images/ship.png');
+      background-repeat: no-repeat;
+      padding-right: 300px;
+      padding-bottom: 200px;
+      padding-top: 25px; }
+      section #content_block #content_right #space_ship span {
+        display: none; }
+    section #content_block #content_right #find_out_more {
+      text-align: center;
+      padding-top: 180px; }
+      section #content_block #content_right #find_out_more #button {
+        background-color: gray;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 5px;
+        padding-left: 5px; }
 section #quicklinks_block #left_block {
   border: 1px solid green;
   background-color: #535353;
   border-radius: 5px; }
-  section #quicklinks_block #left_block div h3, section #quicklinks_block #left_block div h4, section #quicklinks_block #left_block div h5 {
+  section #quicklinks_block #left_block div div {
     color: #FFFFFF; }
 section #quicklinks_block #middle_block {
   border: 1px solid green;
   background-color: #535353;
   color: #FFFFFF;
   border-radius: 5px; }
-  section #quicklinks_block #middle_block div h3, section #quicklinks_block #middle_block div h4, section #quicklinks_block #middle_block div h5 {
+  section #quicklinks_block #middle_block div div {
     color: #FFFFFF; }
 section #quicklinks_block #right_block {
   border: 1px solid green;
   background-color: #535353;
   color: #FFFFFF;
   border-radius: 5px; }
-  section #quicklinks_block #right_block div h3, section #quicklinks_block #right_block div h4, section #quicklinks_block #right_block div h5 {
+  section #quicklinks_block #right_block div p {
     color: #FFFFFF; }
 
 #footer_block {
