@@ -109,7 +109,6 @@ section {
         span {
           display: none;
         }
-
       }
 
       #find_out_more {
@@ -131,11 +130,8 @@ section {
     }
   }
 
-  #quicklinks_block {
 
-    .small-block-grid-3 {
-      // background-color: yellow;
-    }
+  #quicklinks_block {
 
     #left_block {
       border: 1px solid green;
@@ -178,18 +174,15 @@ section {
             text-align: center;
             border: 1px solid $black;
 
-            a {
+          a {
 
-              span {
-                background-image: url('/images/arrow.png');
-            // padding-bottom: 50px;
-
-              }
-              
+            span {
+              background-image: url('/images/arrow.png');
+          // padding-bottom: 50px;
             }
           }
         }
-        
+      } 
     }
   }
 }
