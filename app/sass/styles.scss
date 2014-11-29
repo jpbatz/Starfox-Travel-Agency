@@ -47,48 +47,82 @@ header {
 
 //         // #logo_starfox {
 //         // }
-
-//         // #logo_intergalactic {
-//         // }
-      }  // end a
-
-    }  // end #logo
-
-  }  // end #header_block
-
-} // and of header
-
-#nav_bar {
-  color: white;
-  border: 3px solid white;
-
-  & #nav_menu {
-
-    border: 1px solid white;
-
-    & #home {
-      & h3 {
-        text-align: right;
-        color: white;
+        // #logo_intergalactic {
+        // }
       }
     }
-    & #about {
-      & h3 {
-        text-align: right;
-        color: white;
-      }
+  }
+
+  .top-bar-section {
+    .left {
+      // text-align: center;
     }
-    & #services {
-      & h3 {
-        text-align: right;
-        color: white;
-      }
+  }
+
+}
+
+section {
+
+  #content_block {
+    border: 5px solid red;
+    margin: 40px;
+
+    #content_left {
+      background-color: $main_blue;
+      border-radius: 5px 0px 0px 5px;
     }
-    & #interstellar_travel {
-      & h3 {
-        text-align: right;
-        color: white;
-      }
+
+    #content_right {
+      background-color: pink;
+      border-radius: 0px 5px 5px 0px;
+      background-image: url('/images/ship.png');
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  #quicklinks_block {
+
+    .small-block-grid-3 {
+      // background-color: yellow;
+    }
+
+    #left_block {
+      border: 1px solid green;
+      background-color: $faded_gray;
+      // margin: 5x;
+      border-radius: 5px;
+        div{
+          h3,h4,h5 {
+            color: $white;
+          }
+        }
+    }
+
+    #middle_block {
+      border: 1px solid green;
+      background-color: $faded_gray;
+      color: $white;
+      // margin: 5px;
+      border-radius: 5px;
+        div{
+          h3,h4,h5 {
+            color: $white;
+          }
+        }
+    }
+
+    #right_block {
+      border: 1px solid green;
+      background-color: $faded_gray;
+      color: $white;
+      // margin: 5px;
+      border-radius: 5px;
+        div{
+          h3,h4,h5 {
+            color: $white;
+          }
+        }
     }
 
   }
