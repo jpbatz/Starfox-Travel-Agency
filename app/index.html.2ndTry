@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Starfox Travel Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+
+      <!-- HEADER -->
+
+      <div id="header_block">
+        <h1 id="logo">
+          <a href="#"><!-- background image goes here -->
+            <span id="logo_starfox"><strong>Star</strong>Fox </span>
+            <span id="logo_intergalactic">Intergalactic Travel Agency</span>
+          </a>
+        </h1>
+      </div>
+
+
+      <!-- NAVIGATION -->
+
+      <nav id="nav_bar" class="top-bar" data-topbar role="navigation">
+        <ul class="title-area show-for-small-only">
+          <li class="name">
+            <h1><a href="#"><span id="logo_starfox"><strong>Star</strong>Fox</span></a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+
+          <!-- Left Nav Section -->
+          <ul class="left row">
+            <li class="active large-4 column"><a href="#">Home</a></li>
+            <li class="active large-2 column"><a href="#">Account</a></li>
+            <li class="active large-2 column"><a href="#">Services</a></li>
+            <li class="active large-4 column"><a href="#">Interstellar Travel</a></li>
+          </ul>
+
+        </section>
+
+      </nav>
+
+
+      </div><!-- #header_block -->
+
+    </header>
+
+
+
+    <section>
+
+      <!-- CONTENT -->
+
+      <div id="content_block" class="row">
+        <div id="content_left" class="medium-6 column">
+          We will take you to the <span><strong>Moon and Back!</strong></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error temporibus adipisci quibusdam nam, quod vitae voluptatum, voluptas sequi laboriosam dolores cum voluptates a aperiam? Possimus nostrum voluptatem sint fugit tenetur!
+        </div>
+        <div id="content_right" class="medium-6 column">
+          <a href="#" id="space_ship"><span>Space Ship</span></a>
+          <div id="find_out_more">
+            <span>Find Out More</span>
+          </div>
+        </div>
+      </div>
+
+
+      <ul class="small-block-grid-3">
+        <li>
+          <ul id="left_block">
+            <li><h4>To the Moon</h4></li>
+            <li><h3>$30,000</h3></li>
+            <li><h5>Covers travel fare, lodgings, and meals for 3 months in space.</h5></li>
+          </ul>
+        </li>
+        <li>
+          <ul id="middle_block">
+            <li><h4>Just Around Earth</h4></li>
+            <li><h3>$10,000</h3></li>
+            <li><h5>Covers travel fare, lodgings, and meals for 2 weeks in space.</h5></li>
+          </ul>
+        </li>
+        <li>
+          <ul id="right_block">
+            <li><h4>Just to Jupiter</h4></li>
+            <li><h3>$26,000</h3></li>
+            <li><h4>Center of the Earth</h4></li>
+            <li><h3>$156,000</h3></li>
+            <li id="more_deals">
+              <a href="#">More Deals</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+
+
+    <footer>
+      <div id="footer_block">
+        <p>UFO graphics designed by Kari Gaynor and Dmitry Lagunov from the Noun Project</p>
+      </div>
+    </footer>
+
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+
+</html>
