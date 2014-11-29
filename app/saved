@@ -1,3 +1,5 @@
+Original HTML:
+
     <header id="pageHeader">
       <!-- <img src="/assets/logo.png" alt="Logo Image"> -->
       <div id="logoImg"></div> 
@@ -47,6 +49,7 @@
   </footer>
 
 
+Original CSS:
 
   body {
   background-color: white;
@@ -82,4 +85,76 @@ header#pageHeader {
 footer {
   background-color: $faded_black;
   color: white;
+}
+
+
+Removed from Foundation index.html:
+
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <!-- <li class="active"><a href="#">Right Button Active</a></li> -->
+            <li class="has-dropdown"><a href="#">Dropdown Menu</a>
+              <ul class="dropdown">
+<!--                 <li><a href="#">First link in dropdown</a></li>
+                <li class="active"><a href="#">Active link in dropdown</a></li> -->
+                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#">Account</a></li>
+                <li class="active"><a href="#">Services</a></li>
+                <li class="active"><a href="#">Interstellar Travel</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+      <div id="quicklinks_block" class="row">
+
+        <div id="left_block" class="small-4 column">
+          <h4>To the Moon</h4>
+          <h3>$30,000</h3>
+          <h5>Covers travel fare, lodgings, and meals for 3 months in space.</h5>
+        </div>
+
+        <div id="middle_block" class="small-4 column">
+          <h4>Just Around Earth</h4>
+          <h3>$10,000</h3>
+          <h5>Covers travel fare, lodgings, and meals for 2 weeks in space.</h5>
+        </div>
+
+       <div id="right_block" class="small-4 column">
+          <h4>Just to Jupiter</h4>
+          <h3>$26,000</h3>
+          <h4>Center of the Earth</h4>
+          <h3>$156,000</h3>
+          <div id="more_deals">
+            <a href="#">More Deals</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      .scss:
+
+      #quicklinks_block {
+
+  background-color: yellow;
+  
+  #left_block {
+    border: 1px solid green;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #middle_block {
+    border: 1px solid green;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #right_block {
+    border: 1px solid green;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
 }
