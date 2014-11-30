@@ -138,11 +138,25 @@ section {
       background-color: $faded_gray;
       // margin: 5x;
       border-radius: 5px;
-        div{
-          div {
-            color: $white;
+
+        .row {
+
+          .columns {
+            // text-align: center;
+            // color: $white;
+
+            h4 {
+              // color: $white;
+            }
+            h1 {
+              // color: $white;
+            }
+            p {
+              // color: $white;
+            }
           }
         }
+      }
     }
 
     #middle_block {
