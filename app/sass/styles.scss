@@ -2,6 +2,7 @@
 @import "../bower_components/foundation/scss/foundation";
 
 
+// --- HEADER ---
 
 header {
   // background-color: pink;
@@ -37,10 +38,13 @@ header {
 
         // #logo_intergalactic {
         // }
-      }
-    }
-  }
-}
+      }  // END a
+    }  // END #logo
+  }  // END #header_block
+}  // END header
+
+
+// --- NAVIGATION ---
 
 #nav_bar {
   // border: 5px solid red;
@@ -53,16 +57,20 @@ header {
     padding: 10px;
     text-align: center;
     // need to bring menu elements closer together
-
-    div {
+    .large-3 {
       // border: 1px solid white;
       padding: 0px 0px 0px 0px;
-    }
-  }
-}
+    }  // END .large-3
+  }  // END .row
+}  // END #nav_bar
+
+
+// --- CONTENT ---
 
 section {
 
+  // Blurb
+  
   #content_block {
     // border: 5px solid red;
     margin-top: 40px;
@@ -71,142 +79,174 @@ section {
     border-radius: 5px;
 
     // opacity: 0.9;
+    .row {
 
-    #content_left {
-      // background-color: $main_blue;
-      padding-left: 15px;
-      font-family: 'Open Sans';
-      font-weight: 300;
-      // border-radius: 5px;
-
-
-      p {
-        font-size: 26px;
-        padding: 50px;
-        span {
-          font-weight: 700;
-        }
-      }
-    }
-
-    #content_right {
-      // background-color: pink;
-      background-color: $main_blue;
-      border-radius: 5px;
-      
-      #space_ship {
-        // border: 1px solid green;
-        background-image: url('/images/ship.png');
-        background-repeat: no-repeat;
-        // width: 100px;
-        // height: 100px;
-
-        padding-right: 300px;
-        padding-bottom: 300px;
-        padding-top: 25px;
-        // margin-left: 10px;
-
-        span {
-          display: none;
-        }
-      }
-
-      #find_out_more {
-        // border: 5px solid orange;
-        text-align:center;
-        padding-top: 180px;
-
-        #button {
-          background-color: $faded_gray;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-right: 5px;
-          padding-left: 5px;
-          margin-bottom: 38px;
-          width: 300px;
-          color: $faded_white;
-        }
-      }
-    }
-  }
-
-
-  #quicklinks_block {
-
-    #left_block {
-      border: 1px solid green;
-      background-color: $faded_gray;
-      // margin: 5x;
-      border-radius: 5px;
-
-        .row {
-
-          .columns {
-            // text-align: center;
-            // color: $white;
-
-            h4 {
-              // color: $white;
-            }
-            h1 {
-              // color: $white;
-            }
-            p {
-              // color: $white;
-            }
-          }
-        }
-      }
-    }
-
-    #middle_block {
-      border: 1px solid green;
-      background-color: $faded_gray;
-      color: $white;
-      // margin: 5px;
-      border-radius: 5px;
-        div{
-          div {
-            color: $white;
-          }
-        }
-    }
-
-    #right_block {
-      border: 1px solid green;
-      background-color: $faded_gray;
-      color: $white;
-      // margin: 5px;
-      border-radius: 5px;
-
-        div{
-
+      .large-8 {
+        #content_left {
+          // background-color: $main_blue;
+          padding-left: 15px;
+          font-family: 'Open Sans';
+          font-weight: 300;
+          // border-radius: 5px;
           p {
-            color: $white;
-          }
-          #more_deals {
-            text-align: center;
-            border: 1px solid $black;
-
-          a {
-
+            font-size: 26px;
+            padding: 50px;
             span {
-              background-image: url('/images/arrow.png');
-          // padding-bottom: 50px;
-            }
-          }
-        }
-      } 
-    }
-  }
-}
+              font-weight: 700;
+            }  // END span
+          }  // END p
+        }  // END #content_left
+      }  // END .large-8
+  
+      .large-4 {
+        #content_right {
+          // background-color: pink;
+          background-color: $main_blue;
+          border-radius: 5px;
+          
+          .row {
+            
+            .large-12 {
+              #space_ship {
+                // border: 1px solid green;
+                background-image: url('/images/ship.png');
+                background-repeat: no-repeat;
+                // width: 100px;
+                // height: 100px;
+        
+                padding-right: 300px;
+                padding-bottom: 300px;
+                padding-top: 25px;
+                // margin-left: 10px;
+        
+                span {
+                  display: none;
+                }  // END span
+              }  // END #space_ship
+            } // END .large-12
+    
+            .large-12 {
+              #find_out_more {
+                // border: 5px solid orange;
+                text-align:center;
+                padding-top: 180px;
+        
+                #button {
+                  background-color: $faded_gray;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                  padding-right: 5px;
+                  padding-left: 5px;
+                  margin-bottom: 38px;
+                  width: 300px;
+                  color: $faded_white;
+                }  // END #button
+              }  // END #find_out_more
+            }  // END large-12
+          }  // END .row
+        }  // END #content_right
+      }  // END .large-4
+    }  // END .row
+  }  // END #content_block
+
+
+  // Quicklinks
+  
+  #quicklinks_block {
+    .row {
+      
+      .large-4 {
+        border: 1px solid blue;
+        #left_block {
+          // border: 1px solid green;
+          background-color: $faded_gray;
+          // margin: 5x;
+          border-radius: 5px;
+          .row {
+            .large-12 {
+              // text-align: center;
+              // color: $white;
+              h4 {
+                color: $white;
+                text-align: center;
+              }
+              h1 {
+                // color: $white;
+              }
+              p {
+                // color: $white;
+              }
+            }  // END .large-12
+          }  // END .row
+        }  // END #left_block
+      }  // END .large-4
+
+      .large-4 {
+        #middle_block {
+          border: 1px solid blue;
+          background-color: $faded_gray;
+          color: $white;
+          // margin: 5px;
+          border-radius: 5px;
+          .row {
+            .large-12 {
+                h4 {
+                  
+                }
+                h1 {
+                  
+                }
+                p {
+                  
+                }
+              }  // .large-12
+            }  // .row
+          }  // END #middle_block
+        }  // END .large-4
+
+      .large-4 {
+        #right_block {
+          border: 1px solid blue;
+          background-color: $faded_gray;
+          color: $white;
+          // margin: 5px;
+          border-radius: 5px;
+          .row {
+            .large-12 {
+              p {
+                color: $white;
+              }
+              #more_deals {
+                text-align: center;
+                border: 1px solid $black;
+                a {
+                  span {
+                    background-image: url('/images/arrow.png');
+                    // padding-bottom: 50px;
+                  }  // END span
+                }  // END a
+              }   // END #more_deals
+            }  // .large-12
+          }  // END .row
+        }  // END #right_block
+      }  // END .large-4
+    }  // END .row
+  }  // END #quicklinks_block
+}  // END section
+
+
+// --- FOOTER ---
 
 footer {
   margin-top: 40px;
   text-align: center;
+  // width: 100%;
+  // position: fixed;
+  // bottom: 0px;
 
   #footer_block {
     background-color: $medium_black;
+    // vertical-align: middle;
     color: $faded_white;
     padding-top: 20px;
     padding-bottom: 8px;
