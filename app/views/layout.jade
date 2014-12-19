@@ -1,21 +1,53 @@
 doctype html
+
 html(lang="en")
+
 head
-  meat(charset="UTF-8")
-  title My cool layout
+  meta(charset="UTF-8")
+  title Starfox Travel Agency
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  script(src="/bower_components/modernizr/modernizr.js")
+  link(rel="stylesheet" href="/css/styles.css")
+
 body
-  div#header
-    | my cool header
 
-  div#content
-    block content
+  header
+    div#header_block
+      h1#logo
+        a(href="#")
+          span(id="logo_starfox")
+            strong Star
+          | Fox
+          span(id="logo_intergalactic")
+            | Intergalactic Travel Agency
 
-  div#footer
-    | hello footer
+  div#nav_bar
+    div.row
+      div.large-3.columns
+        | Home
+      div.large-3.columns
+        | Accounts
+      div.large-3.columns
+        | Services
+      div.large-3.columns
+        | Interstellar Travel
 
-  span.copyright
-    block copyright
-      | &copy; Ray 2066
+  section.row
+    block section
+ 
 
-  block scripts
-    script(src="jquery.js")
+  footer
+    div#footer_block
+      p UFO graphics designed by Kari Gaynor and Dmitry Lagunov from the Noun Project
+
+    span.copyright
+      block copyright
+        | &copy; Ray 2066
+
+  script(src="/bower_components/jquery/dist/jquery.min.js")
+  script(src="/bower_components/foundation/js/foundation.min.js")
+
+
+
+  //- block scripts
+  //-   script(src="jquery.js")

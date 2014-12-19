@@ -3,14 +3,13 @@ var express = require('express');
 var app = express();
 
 /* MIDDLEWARE */
-app.use(express.static('public'));
+app.use(express.static('./'));
 // app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'jade');
 
 
 /* ROUTES */
 app.get('/', function(req, res) {
-
   var locals = {
     myname: "jon"
   };
