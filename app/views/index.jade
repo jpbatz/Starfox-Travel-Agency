@@ -1,29 +1,4 @@
-//- mixin render_pet(pet)
-//-   li
-//-     | hello 
-//-     = pet
-
 extends ./layout.jade
-
-//- block content
-//-   p hello #{ 5 + 2 }
-//-   p
-//-     if (myname === "so annoying")
-//-       span ejs tags are so annoying
-//-     else
-//-       | your name is #{myname}
-
-//-   ul
-//-     each pet in mypets
-//-       //- li #{pet}
-//-       +render_pet(pet)
-
-//- block copyright
-//-   | &copy; Marifel 2014
-
-//- block scripts
-//-   script(src="jquery.js")
-
 
 block section
   div#content_block
@@ -42,7 +17,51 @@ block section
               a(href="#")#space_ship
                   span Space Ship
 
-            div.large-12 columns
+            div.large-12.columns
               div#find_out_more
                 div#button
                   | Find Out More
+  
+  div#quicklinks_block
+    div.row
+      div.large-4.columns
+        div#left_block
+          div.row
+            div.large-12.columns
+              h4 To the Moon
+          div.row
+            div.large-12.columns
+              h1 $30,000
+          div.row
+            div.large-12.columns
+              p Covers travel fare, lodgings, and meals for 3 months in space.
+
+      div.large-4.columns
+        div#middle_block
+          div.row
+            div.large-12.comumns
+              h4 Just Around Earth
+            div.row
+              div.large-12.columns
+                h1 $10,000
+            div.row
+              div.large-12.columns
+                p Covers travel fare, lodgings, and meals for 2 weeks in space.
+
+      div.large-4.columns
+        div#right_block
+          div.row
+            div.large-12.columns
+              p Just to Jupiter
+                br
+                | $26,000
+          div.row
+            div.large-12.columns
+              p Center of the Earth
+                br
+                | $156,000
+          div.row
+            div.large-12.columns
+              div#More Deals
+                span Arrow
+  
