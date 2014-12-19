@@ -9,14 +9,21 @@ app.engine('html', require('ejs').renderFile);
 
 /* ROUTES */
 app.get('/', function(req, res) {
-  res.render('./index.ejs', {
-    myname: "so annoying",
-    mypets: [
+
+  var locals = {
+    myname: "jon"
+  };
+
+  locals.mypets [
       "mochi",
       "boba",
       "cookie",
       "cat"
-    ]
+  ]
+
+  res.render('./index.ejs', {
+    myname: "so annoying",
+
   });
 });
 
