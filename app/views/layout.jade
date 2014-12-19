@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+head
+  meat(charset="UTF-8")
+  title My cool layout
+body
+  div#header
+    | my cool header
+
+  div#content
+    block content
+
+  div#footer
+    | hello footer
+
+  span.copyright
+    block copyright
+      | &copy; Ray 2066
+
+  block scripts
+    script(src="jquery.js")
