@@ -5571,7 +5571,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         padding-top: 120px;
-        color: white;
+        color: black;
         font-size: 18px; }
 
 #nav_bar .row {
@@ -5594,7 +5594,8 @@ section #content_block {
     font-weight: 300; }
     section #content_block .row .large-8 #content_left p {
       font-size: 26px;
-      padding: 50px; }
+      padding: 50px;
+      opacity: 0.8; }
       section #content_block .row .large-8 #content_left p span {
         font-weight: 700; }
   section #content_block .row .large-4 #content_right {
