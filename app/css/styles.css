@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
 meta.foundation-version {
   font-family: "/5.4.7/"; }
@@ -5573,7 +5571,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         padding-top: 120px;
-        color: white;
+        color: black;
         font-size: 18px; }
 
 #nav_bar .row {
@@ -5582,7 +5580,7 @@ header {
   color: white;
   padding: 10px;
   text-align: center; }
-  #nav_bar .row div {
+  #nav_bar .row .large-3 {
     padding: 0px 0px 0px 0px; }
 
 section #content_block {
@@ -5590,30 +5588,31 @@ section #content_block {
   margin-bottom: 40px;
   background-color: #88C2C0;
   border-radius: 5px; }
-  section #content_block #content_left {
+  section #content_block .row .large-8 #content_left {
     padding-left: 15px;
     font-family: 'Open Sans';
     font-weight: 300; }
-    section #content_block #content_left p {
+    section #content_block .row .large-8 #content_left p {
       font-size: 26px;
-      padding: 50px; }
-      section #content_block #content_left p span {
+      padding: 50px;
+      opacity: 0.8; }
+      section #content_block .row .large-8 #content_left p span {
         font-weight: 700; }
-  section #content_block #content_right {
+  section #content_block .row .large-4 #content_right {
     background-color: #88C2C0;
     border-radius: 5px; }
-    section #content_block #content_right #space_ship {
+    section #content_block .row .large-4 #content_right .row .large-12 #space_ship {
       background-image: url('/images/ship.png');
       background-repeat: no-repeat;
       padding-right: 300px;
       padding-bottom: 300px;
       padding-top: 25px; }
-      section #content_block #content_right #space_ship span {
+      section #content_block .row .large-4 #content_right .row .large-12 #space_ship span {
         display: none; }
-    section #content_block #content_right #find_out_more {
+    section #content_block .row .large-4 #content_right .row .large-12 #find_out_more {
       text-align: center;
       padding-top: 180px; }
-      section #content_block #content_right #find_out_more #button {
+      section #content_block .row .large-4 #content_right .row .large-12 #find_out_more #button {
         background-color: #676767;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -5622,30 +5621,30 @@ section #content_block {
         margin-bottom: 38px;
         width: 300px;
         color: #3F3F3F; }
-section #quicklinks_block #left_block {
-  border: 1px solid green;
-  background-color: #676767;
-  border-radius: 5px; }
-  section #quicklinks_block #left_block div div {
-    color: #FFFFFF; }
-section #quicklinks_block #middle_block {
-  border: 1px solid green;
-  background-color: #676767;
-  color: #FFFFFF;
-  border-radius: 5px; }
-  section #quicklinks_block #middle_block div div {
-    color: #FFFFFF; }
-section #quicklinks_block #right_block {
-  border: 1px solid green;
+section #quicklinks_block .row .large-4 {
+  border: 1px solid blue; }
+  section #quicklinks_block .row .large-4 #left_block {
+    background-color: #676767;
+    border-radius: 5px; }
+    section #quicklinks_block .row .large-4 #left_block .row .large-12 h4 {
+      color: #FFFFFF;
+      text-align: center; }
+section #quicklinks_block .row .large-4 #middle_block {
+  border: 1px solid blue;
   background-color: #676767;
   color: #FFFFFF;
   border-radius: 5px; }
-  section #quicklinks_block #right_block div p {
+section #quicklinks_block .row .large-4 #right_block {
+  border: 1px solid blue;
+  background-color: #676767;
+  color: #FFFFFF;
+  border-radius: 5px; }
+  section #quicklinks_block .row .large-4 #right_block .row .large-12 p {
     color: #FFFFFF; }
-  section #quicklinks_block #right_block div #more_deals {
+  section #quicklinks_block .row .large-4 #right_block .row .large-12 #more_deals {
     text-align: center;
     border: 1px solid #000000; }
-    section #quicklinks_block #right_block div #more_deals a span {
+    section #quicklinks_block .row .large-4 #right_block .row .large-12 #more_deals a span {
       background-image: url('/images/arrow.png'); }
 
 footer {
@@ -5656,4 +5655,3 @@ footer {
     color: #3F3F3F;
     padding-top: 20px;
     padding-bottom: 8px; }
->>>>>>> 87a23d9d04d4a683e70509d92b27f557020c5f61
