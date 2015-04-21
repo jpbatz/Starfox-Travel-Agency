@@ -147,7 +147,8 @@ section {
           }  // END .row
 
         }  // END #content_right
-      }  // END .large-4
+      }  // END .large-8
+
     }  // END .row
   }  // END #content_block
 
@@ -240,37 +241,51 @@ section {
         }  // END #middle_block
       }  // END .large-4
 
-  //     .large-4 {
-  //       #right_block {
-  //         border: 1px solid brown;
-  //         background-color: $faded_gray;
-  //         color: $white;
-  //         // margin: 5px;
-  //         border-radius: 5px;
-  //         .row {
-  //           .large-12 {
-  //             p {
-  //               color: $white;
-  //             }
-  //             #more_deals {
-  //               text-align: center;
-  //               border: 1px solid $black;
-  //               a {
-  //                 span {
-  //                   background-image: url('/images/arrow.png');
-  //                   // padding-bottom: 50px;
-  //                 }  // END span
-  //               }  // END a
-  //             }   // END #more_deals
-  //           }  // .large-12
-  //         }  // END .row
-  //       }  // END #right_block
-  //     }  // END .large-4
+      .large-4 {
+        #right_block {
+          border: 1px solid brown;
+          background-color: $faded_gray;
+          text-align: center;
+
+          // color: $white;
+          // margin: 5px;
+          border-radius: 5px;
+          .row {
+            .large-12 {
+              p {
+                color: $white;
+              }
+            }
+          }
+          .row {
+            .large-12 {
+              p {
+                color: $white;
+              }
+            }
+          }
+          .row {
+            .large-12 {
+              #more_deals {
+                text-align: center;
+                // border: 1px solid $black;
+                a {
+                  span {
+                    background-image: url('/images/arrow.png');
+                    // padding-bottom: 50px;
+                  }  // END span
+                }  // END a
+              }   // END #more_deals
+            }  // .large-12
+          }  // END .row
+
+        }  // END #right_block
+      }  // END .large-4
 
     }  // END .row
   }  // END #quicklinks_block
-}  // END section
 
+}  // END section
 
 // --- FOOTER ---
 
