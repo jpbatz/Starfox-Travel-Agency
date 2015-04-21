@@ -86,11 +86,9 @@ section {
       .large-8 {
         #content_left {
           // border: 5px solid red;
-          // background-color: $main_blue;
           padding-left: 15px;
           font-family: 'Open Sans';
           font-weight: 300;
-          // border-radius: 5px;
           margin-right: 50px;
           p {
             margin-right: 50px;
@@ -106,36 +104,32 @@ section {
   
       .large-4 {
         #content_right {
+          // border: 5px solid red;
           // background-color: pink;
-          // background-color: $main_blue;
           border-radius: 5px;
           
           .row {
-            
             .large-12 {
               #space_ship {
                 // border: 1px solid green;
                 background-image: url('/images/ship.png');
                 background-repeat: no-repeat;
-                // width: 100px;
-                // height: 100px;
-        
                 padding-right: 300px;
-                padding-bottom: 300px;
+                padding-bottom: 200px;
                 padding-top: 25px;
-                // margin-left: 10px;
-        
                 span {
                   display: none;
                 }  // END span
               }  // END #space_ship
             } // END .large-12
-    
+          }  // END .row
+
+          .row {
             .large-12 {
               #find_out_more {
                 // border: 5px solid orange;
                 text-align:center;
-                padding-top: 260px;
+                padding-top: 26px;
         
                 #button {
                   background-color: $faded_gray;
@@ -143,6 +137,7 @@ section {
                   padding-bottom: 20px;
                   padding-right: 5px;
                   padding-left: 5px;
+                  margin-top: 240px;
                   margin-bottom: 38px;
                   width: 300px;
                   color: $faded_white;
@@ -150,6 +145,7 @@ section {
               }  // END #find_out_more
             }  // END large-12
           }  // END .row
+
         }  // END #content_right
       }  // END .large-4
     }  // END .row
@@ -159,83 +155,118 @@ section {
   // Quicklinks
   
   #quicklinks_block {
+    // border: 5px solid red;
+    // background-color: yellow;
     .row {
-      
+
       .large-4 {
-        border: 1px solid blue;
         #left_block {
-          // border: 1px solid green;
+          // border: 1px solid blue;
           background-color: $faded_gray;
-          // margin: 5x;
           border-radius: 5px;
+          margin: 15x;
           .row {
             .large-12 {
-              // text-align: center;
-              // color: $white;
+
               h4 {
                 color: $white;
                 text-align: center;
+                border-bottom: 1px solid black;
+                margin: 30px;
               }
+            }
+          }
+          .row {
+            .large-12 {
               h1 {
-                // color: $white;
+                // padding: 0px;
+                color: $white;
+                text-align: center;
+                font-style: underline;
+                // border-bottom: 5px solid $white;
+                margin: 30px;
+                // width: 70%;
               }
+            }
+          }
+          .row {
+            .large-12 {              
               p {
-                // color: $white;
+                color: $white;
+                text-align: center;
+                margin: 10px;
               }
             }  // END .large-12
           }  // END .row
+
         }  // END #left_block
       }  // END .large-4
 
       .large-4 {
         #middle_block {
-          border: 1px solid blue;
+          // border: 1px solid blue;
           background-color: $faded_gray;
           color: $white;
           // margin: 5px;
           border-radius: 5px;
           .row {
             .large-12 {
-                h4 {
-                  
-                }
-                h1 {
-                  
-                }
-                p {
-                  
-                }
-              }  // .large-12
-            }  // .row
-          }  // END #middle_block
-        }  // END .large-4
-
-      .large-4 {
-        #right_block {
-          border: 1px solid blue;
-          background-color: $faded_gray;
-          color: $white;
-          // margin: 5px;
-          border-radius: 5px;
+              h4 {
+                color: $white;
+                text-align: center;
+                border-bottom: 1px solid black;                
+              }
+            }
+          }
           .row {
             .large-12 {
+              h1 {
+                color: $white;
+                text-align: center;
+                border-bottom: 5px solid $white;
+                margin: 30px;                
+              }
+            }
+          }
+          .row {
+            .large-12 {          
               p {
                 color: $white;
-              }
-              #more_deals {
                 text-align: center;
-                border: 1px solid $black;
-                a {
-                  span {
-                    background-image: url('/images/arrow.png');
-                    // padding-bottom: 50px;
-                  }  // END span
-                }  // END a
-              }   // END #more_deals
+                margin: 10px;                
+              }
             }  // .large-12
-          }  // END .row
-        }  // END #right_block
+          }  // .row
+        }  // END #middle_block
       }  // END .large-4
+
+  //     .large-4 {
+  //       #right_block {
+  //         border: 1px solid brown;
+  //         background-color: $faded_gray;
+  //         color: $white;
+  //         // margin: 5px;
+  //         border-radius: 5px;
+  //         .row {
+  //           .large-12 {
+  //             p {
+  //               color: $white;
+  //             }
+  //             #more_deals {
+  //               text-align: center;
+  //               border: 1px solid $black;
+  //               a {
+  //                 span {
+  //                   background-image: url('/images/arrow.png');
+  //                   // padding-bottom: 50px;
+  //                 }  // END span
+  //               }  // END a
+  //             }   // END #more_deals
+  //           }  // .large-12
+  //         }  // END .row
+  //       }  // END #right_block
+  //     }  // END .large-4
+
     }  // END .row
   }  // END #quicklinks_block
 }  // END section
