@@ -4,6 +4,14 @@
 
 // --- HEADER ---
 
+.hr {
+  background-color: $faded_gray;
+  border: 1px solid #000000;
+  height: 1px;
+  margin: 10px 0;
+  // width: 760px;
+}
+
 header {
   // background-color: pink;
   // border: 10px solid red;
@@ -15,7 +23,7 @@ header {
     background-image: url('/images/header_bg.png');
     background-color: $main_blue;
     padding-bottom: 20px;
-    padding-top: 130px;
+    padding-top: 110px;
 
     #logo {
       // background-color: orange;
@@ -27,7 +35,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         padding-top: 120px;
-        color: black;
+        color: $black;
         font-size: 18px;
 
         #logo_starfox {
@@ -63,6 +71,16 @@ header {
       //   margin-left: 20px;
       //   margin-right: 20px;
       // }
+      a {
+        // border: 1px solid green;
+        color: $main_blue;
+        :hover {
+          color: $white;
+        }
+        span {
+
+        }
+      }
     }  // END .large-3
   }  // END .row
 }  // END #nav_bar
@@ -76,6 +94,8 @@ section {
   
   #content_block {
     // border: 5px solid red;
+    width: 1200px;
+    margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: $main_blue;
@@ -157,22 +177,26 @@ section {
   
   #quicklinks_block {
     // border: 5px solid red;
+    width: 1200px;
+    margin: auto;
     // background-color: yellow;
     .row {
 
       .large-4 {
+        padding: 0px;
         #left_block {
           // border: 3px solid blue;
           background-color: $faded_gray;
           border-radius: 5px;
-          // padding: 35px;
+          padding: 25px;
+          margin-right: 40px;
           .row {
             .large-12 {
             padding: 10px;
               h4 {
                 color: $white;
                 text-align: center;
-                border-bottom: 1px solid black;
+                // border-bottom: 1px solid black;
                 // margin: 30px;
               }
             }
@@ -184,10 +208,8 @@ section {
                 // padding: 0px;
                 color: $white;
                 text-align: center;
-                // text-decoration: underline;
                 border-bottom: 5px solid $white;
                 margin: 30px;
-                // width: 70%;
               }
             }
           }
@@ -210,7 +232,8 @@ section {
           // border: 1px solid blue;
           background-color: $faded_gray;
           color: $white;
-          // padding: 35px;
+          padding: 25px;
+          margin-right: 20px;
           border-radius: 5px;
           .row {
             .large-12 {
@@ -219,7 +242,7 @@ section {
               h4 {
                 color: $white;
                 text-align: center;
-                border-bottom: 1px solid black;                
+                // border-bottom: 1px solid black;                
               }
             }
           }
@@ -255,9 +278,11 @@ section {
           background-color: $faded_gray;
           text-align: center;
           border-radius: 5px;
+          margin-left: 20px;
           .row {
             .large-12 {
               padding-top: 25px;
+              margin-top: 8px;
               p {
                 color: $white;
                 span {
@@ -269,6 +294,7 @@ section {
           }
           .row {
             .large-12 {
+              margin-top: 8px;
               padding-top: 25px;
               p {
                 color: $white;
@@ -281,13 +307,17 @@ section {
           }
 
           #more_deals_a {
-            border: 1px solid white;
+            // border: 1px solid yellow;
             // border-top: 1px solid $white;
+            :hover {
+              background-color: $black;
+            }
             .row {
               .large-12 {
                 #more_deals {
                   // border: 1px solid brown;
                   display: inline-block;
+                  margin-bottom: 2px;
                   text-align: center;
                     p {
                       // border: 1px solid yellow;
@@ -330,6 +360,6 @@ footer {
     // vertical-align: middle;
     color: $faded_white;
     padding-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
   }
 }

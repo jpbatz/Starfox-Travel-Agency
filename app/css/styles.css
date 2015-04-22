@@ -5557,6 +5557,12 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+.hr {
+  background-color: #676767;
+  border: 1px solid #000000;
+  height: 1px;
+  margin: 10px 0; }
+
 header {
   text-align: center;
   margin-bottom: -20px; }
@@ -5564,7 +5570,7 @@ header {
     background-image: url('/images/header_bg.png');
     background-color: #88C2C0;
     padding-bottom: 20px;
-    padding-top: 130px; }
+    padding-top: 110px; }
     header #header_block #logo {
       padding-bottom: 5px; }
       header #header_block #logo a {
@@ -5572,7 +5578,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         padding-top: 120px;
-        color: black;
+        color: #000000;
         font-size: 18px; }
         header #header_block #logo a #logo_starfox {
           opacity: 0.8; }
@@ -5587,8 +5593,14 @@ header {
   text-align: center; }
   #nav_bar .row .large-3 {
     padding: 0px 0px 0px 0px; }
+    #nav_bar .row .large-3 a {
+      color: #88C2C0; }
+      #nav_bar .row .large-3 a :hover {
+        color: #FFFFFF; }
 
 section #content_block {
+  width: 1200px;
+  margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: #88C2C0;
@@ -5628,73 +5640,84 @@ section #content_block {
         margin-bottom: 38px;
         width: 300px;
         color: #3F3F3F; }
-section #quicklinks_block .row .large-4 #left_block {
-  background-color: #676767;
-  border-radius: 5px; }
-  section #quicklinks_block .row .large-4 #left_block .row .large-12 {
-    padding: 10px; }
-    section #quicklinks_block .row .large-4 #left_block .row .large-12 h4 {
-      color: #FFFFFF;
-      text-align: center;
-      border-bottom: 1px solid black; }
-  section #quicklinks_block .row .large-4 #left_block .row .large-12 {
-    padding: 10px; }
-    section #quicklinks_block .row .large-4 #left_block .row .large-12 h1 {
-      color: #FFFFFF;
-      text-align: center;
-      border-bottom: 5px solid #FFFFFF;
-      margin: 30px; }
-  section #quicklinks_block .row .large-4 #left_block .row .large-12 {
-    padding: 10px; }
-    section #quicklinks_block .row .large-4 #left_block .row .large-12 p {
-      color: #FFFFFF;
-      text-align: center;
-      margin: 10px; }
-section #quicklinks_block .row .large-4 #middle_block {
-  background-color: #676767;
-  color: #FFFFFF;
-  border-radius: 5px; }
-  section #quicklinks_block .row .large-4 #middle_block .row .large-12 {
-    padding: 10px; }
-    section #quicklinks_block .row .large-4 #middle_block .row .large-12 h4 {
-      color: #FFFFFF;
-      text-align: center;
-      border-bottom: 1px solid black; }
-  section #quicklinks_block .row .large-4 #middle_block .row .large-12 {
-    padding: 10px; }
-    section #quicklinks_block .row .large-4 #middle_block .row .large-12 h1 {
-      color: #FFFFFF;
-      text-align: center;
-      border-bottom: 5px solid #FFFFFF;
-      margin: 30px; }
-  section #quicklinks_block .row .large-4 #middle_block .row .large-12 {
-    padding: 10px; }
-    section #quicklinks_block .row .large-4 #middle_block .row .large-12 p {
-      color: #FFFFFF;
-      text-align: center;
-      margin: 10px; }
-section #quicklinks_block .row .large-4 #right_block {
-  background-color: #676767;
-  text-align: center;
-  border-radius: 5px; }
-  section #quicklinks_block .row .large-4 #right_block .row .large-12 {
-    padding-top: 25px; }
-    section #quicklinks_block .row .large-4 #right_block .row .large-12 p {
-      color: #FFFFFF; }
-      section #quicklinks_block .row .large-4 #right_block .row .large-12 p span {
-        font-size: 2em;
-        font-weight: 300; }
-  section #quicklinks_block .row .large-4 #right_block .row .large-12 {
-    padding-top: 25px; }
-    section #quicklinks_block .row .large-4 #right_block .row .large-12 p {
-      color: #FFFFFF; }
-      section #quicklinks_block .row .large-4 #right_block .row .large-12 p span {
-        font-size: 2em;
-        font-weight: 300; }
-  section #quicklinks_block .row .large-4 #right_block #more_deals_a {
-    border: 1px solid white; }
+section #quicklinks_block {
+  width: 1200px;
+  margin: auto; }
+  section #quicklinks_block .row .large-4 {
+    padding: 0px; }
+    section #quicklinks_block .row .large-4 #left_block {
+      background-color: #676767;
+      border-radius: 5px;
+      padding: 25px;
+      margin-right: 40px; }
+      section #quicklinks_block .row .large-4 #left_block .row .large-12 {
+        padding: 10px; }
+        section #quicklinks_block .row .large-4 #left_block .row .large-12 h4 {
+          color: #FFFFFF;
+          text-align: center; }
+      section #quicklinks_block .row .large-4 #left_block .row .large-12 {
+        padding: 10px; }
+        section #quicklinks_block .row .large-4 #left_block .row .large-12 h1 {
+          color: #FFFFFF;
+          text-align: center;
+          border-bottom: 5px solid #FFFFFF;
+          margin: 30px; }
+      section #quicklinks_block .row .large-4 #left_block .row .large-12 {
+        padding: 10px; }
+        section #quicklinks_block .row .large-4 #left_block .row .large-12 p {
+          color: #FFFFFF;
+          text-align: center;
+          margin: 10px; }
+  section #quicklinks_block .row .large-4 #middle_block {
+    background-color: #676767;
+    color: #FFFFFF;
+    padding: 25px;
+    margin-right: 20px;
+    border-radius: 5px; }
+    section #quicklinks_block .row .large-4 #middle_block .row .large-12 {
+      padding: 10px; }
+      section #quicklinks_block .row .large-4 #middle_block .row .large-12 h4 {
+        color: #FFFFFF;
+        text-align: center; }
+    section #quicklinks_block .row .large-4 #middle_block .row .large-12 {
+      padding: 10px; }
+      section #quicklinks_block .row .large-4 #middle_block .row .large-12 h1 {
+        color: #FFFFFF;
+        text-align: center;
+        border-bottom: 5px solid #FFFFFF;
+        margin: 30px; }
+    section #quicklinks_block .row .large-4 #middle_block .row .large-12 {
+      padding: 10px; }
+      section #quicklinks_block .row .large-4 #middle_block .row .large-12 p {
+        color: #FFFFFF;
+        text-align: center;
+        margin: 10px; }
+  section #quicklinks_block .row .large-4 #right_block {
+    background-color: #676767;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 20px; }
+    section #quicklinks_block .row .large-4 #right_block .row .large-12 {
+      padding-top: 25px;
+      margin-top: 8px; }
+      section #quicklinks_block .row .large-4 #right_block .row .large-12 p {
+        color: #FFFFFF; }
+        section #quicklinks_block .row .large-4 #right_block .row .large-12 p span {
+          font-size: 2em;
+          font-weight: 300; }
+    section #quicklinks_block .row .large-4 #right_block .row .large-12 {
+      margin-top: 8px;
+      padding-top: 25px; }
+      section #quicklinks_block .row .large-4 #right_block .row .large-12 p {
+        color: #FFFFFF; }
+        section #quicklinks_block .row .large-4 #right_block .row .large-12 p span {
+          font-size: 2em;
+          font-weight: 300; }
+    section #quicklinks_block .row .large-4 #right_block #more_deals_a :hover {
+      background-color: #000000; }
     section #quicklinks_block .row .large-4 #right_block #more_deals_a .row .large-12 #more_deals {
       display: inline-block;
+      margin-bottom: 2px;
       text-align: center; }
       section #quicklinks_block .row .large-4 #right_block #more_deals_a .row .large-12 #more_deals p {
         color: #FFFFFF;
@@ -5710,4 +5733,4 @@ footer {
     background-color: #262626;
     color: #3F3F3F;
     padding-top: 20px;
-    padding-bottom: 8px; }
+    padding-bottom: 2px; }
