@@ -17,7 +17,7 @@
     <header>
       <div id="header_block">
         <h1 id="logo">
-          <a href="#"><!-- background image goes here -->
+          <a href="#"><!-- background image goes here in css -->
             <span id="logo_starfox"><strong>StarFox</strong></span>
             <span id="logo_intergalactic">Intergalactic Travel Agency</span>
           </a>
@@ -103,22 +103,28 @@
               <div class="row">
                 <div class="large-12 columns">
                   <p>Just to Jupiter<br>
-                     $26,000</p>
+                     <span>$26,000</span></p>
                 </div><!-- END .large-12 .columns -->
               </div><!-- END .row -->
               <div class="row">
                 <div class="large-12 columns">
                   <p>Center of the Earth<br>
-                     $156,000</p>
+                     <span>$156,000</span></p>
                 </div><!-- END .large-12 .columns -->
               </div><!-- END .row -->
-              <div class="row">
-                <div class="large-12 columns">
-                  <div id="more_deals">
-                    <a href="#">More Deals<span>Arrow</span></a>
-                  </div><!-- END #more_deals -->
-                </div><!-- END .large-12 .columns -->
-              </div><!-- END .row -->
+
+              <a id="more_deals_a" href="#">
+                <div class="row">
+                  <div class="large-12 columns">
+                    <div id="more_deals">
+                      <p>More Deals</p>
+                    </div><!-- END #more_deals -->
+                    <div id="arrow">
+                      <img src="/images/arrow.png" alt="arrow.png">
+                    </div><!-- END #arrow -->
+                  </div><!-- END .large-12 .columns -->
+                </div><!-- END .row -->
+              </a>
 
             </div><!-- END #right_block -->
           </div><!-- END .large-4 .columns -->

@@ -50,7 +50,7 @@ header {
   .row {
     background-color: $medium_black;
     border-radius: 5px;
-    color: white;
+    color: $main_blue;
     padding: 10px;
     text-align: center;
     // need to bring menu elements closer together
@@ -162,36 +162,38 @@ section {
 
       .large-4 {
         #left_block {
-          // border: 1px solid blue;
+          // border: 3px solid blue;
           background-color: $faded_gray;
           border-radius: 5px;
-          margin: 15x;
+          // padding: 35px;
           .row {
             .large-12 {
-
+            padding: 10px;
               h4 {
                 color: $white;
                 text-align: center;
                 border-bottom: 1px solid black;
-                margin: 30px;
+                // margin: 30px;
               }
             }
           }
           .row {
             .large-12 {
+            padding: 10px;
               h1 {
                 // padding: 0px;
                 color: $white;
                 text-align: center;
-                font-style: underline;
-                // border-bottom: 5px solid $white;
+                // text-decoration: underline;
+                border-bottom: 5px solid $white;
                 margin: 30px;
                 // width: 70%;
               }
             }
           }
           .row {
-            .large-12 {              
+            .large-12 {
+            padding: 10px;
               p {
                 color: $white;
                 text-align: center;
@@ -208,10 +210,12 @@ section {
           // border: 1px solid blue;
           background-color: $faded_gray;
           color: $white;
-          // margin: 5px;
+          // padding: 35px;
           border-radius: 5px;
           .row {
             .large-12 {
+            // border: 1px solid blue;
+            padding: 10px;
               h4 {
                 color: $white;
                 text-align: center;
@@ -221,6 +225,8 @@ section {
           }
           .row {
             .large-12 {
+            // border: 1px solid blue;
+            padding: 10px;
               h1 {
                 color: $white;
                 text-align: center;
@@ -230,7 +236,9 @@ section {
             }
           }
           .row {
-            .large-12 {          
+            .large-12 {
+            // border: 1px solid blue;
+            padding: 10px;
               p {
                 color: $white;
                 text-align: center;
@@ -243,41 +251,62 @@ section {
 
       .large-4 {
         #right_block {
-          border: 1px solid brown;
+          // border: 1px solid brown;
           background-color: $faded_gray;
           text-align: center;
-
-          // color: $white;
-          // margin: 5px;
           border-radius: 5px;
           .row {
             .large-12 {
+              padding-top: 25px;
               p {
                 color: $white;
+                span {
+                  font-size: 2em;
+                  font-weight: 300;
+                }
               }
             }
           }
           .row {
             .large-12 {
+              padding-top: 25px;
               p {
                 color: $white;
+                span {
+                  font-size: 2em;
+                  font-weight: 300;
+                }
               }
             }
           }
-          .row {
-            .large-12 {
-              #more_deals {
-                text-align: center;
-                // border: 1px solid $black;
-                a {
-                  span {
-                    background-image: url('/images/arrow.png');
-                    // padding-bottom: 50px;
-                  }  // END span
-                }  // END a
-              }   // END #more_deals
-            }  // .large-12
-          }  // END .row
+
+          #more_deals_a {
+            border: 1px solid white;
+            // border-top: 1px solid $white;
+            .row {
+              .large-12 {
+                #more_deals {
+                  // border: 1px solid brown;
+                  display: inline-block;
+                  text-align: center;
+                    p {
+                      // border: 1px solid yellow;
+                      color: $white;
+                      font-size: 1.5em;
+                      padding-right: 5px;
+                    }  // END p
+                  }  // END #more_deals
+                #arrow {
+                  // border: 1px solid brown;
+                  display: inline-block;
+                  // background-image: url('/images/arrow.png');
+                  // background-repeat: no-repeat;
+                }  // END #arrow
+              }  // END .large-12
+
+            }  // END .row
+          }  // END #more_deals_a
+
 
         }  // END #right_block
       }  // END .large-4
